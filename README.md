@@ -30,13 +30,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+forEach() changes the original array, whereas map() returns a new array, without mutating the original array.
+
 2. What is the difference between a function and a method?
+
+Functions are objects
 
 3. What is closure?
 
+A closure is the combination of a function and the environment within which that function was declared.
+
 4. Describe the four rules of the 'this' keyword.
 
+1- Window: Whenever a function is contained in the global scope, the value of this inside of that function will be the window object.
+2- Implicit: Implicit binding occurs when dot notation is used to invoke a function. whatever is to the left of the dot becomes the context for this in the function.
+3- New Binding: Using the new keyword constructs a new object. With the help of this it can refer to the new object.
+4- Explicit: Explicit binding of this occurs when .call(), .apply(), or .bind() are used on a function. We call these explicit because you are explicitly passing in a this context to call() or apply().
+
 5. Why do we need super() in an extended class?
+Super makes sure that the parent constructor looks at the child attributes. The extend makes ure that the child looks and inherits all of the parents attributes.
 
 ## Project Set up
 
